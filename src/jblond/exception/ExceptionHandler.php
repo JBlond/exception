@@ -72,8 +72,15 @@ class ExceptionHandler
     public static function errorHandler($eConstantError, $eStr, $eFile, $eLine, $mixedVars)
     {
         if (!isset(self::$aTrans[$eConstantError])) {
-            throw new ExceptionUnexpected($eConstantError, $eStr, $eFile, $eLine, $mixedVars, self::$boolTrace,
-                self::$boolContext);
+            throw new ExceptionUnexpected(
+                $eConstantError,
+                $eStr,
+                $eFile,
+                $eLine,
+                $mixedVars,
+                self::$boolTrace,
+                self::$boolContext
+            );
         } else {
             throw new self::$aTrans[$eConstantError]($eConstantError, $eStr, $eFile, $eLine, $mixedVars,
                 self::$boolTrace, self::$boolContext);
