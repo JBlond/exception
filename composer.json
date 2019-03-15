@@ -17,7 +17,7 @@
     "php": ">= 7.1"
   },
   "require-dev": {
-    "phpunit/phpunit": "*"
+    "squizlabs/php_codesniffer": "*"
   },
   "autoload": {
     "psr-4": {
