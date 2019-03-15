@@ -1,6 +1,8 @@
 <?php
 namespace jblond\exception;
 
+use Exception;
+
 /**
  * ExceptionErrorHandler
  *
@@ -11,7 +13,7 @@ namespace jblond\exception;
  * Class exception_error_handler
  * @package jblond
  */
-abstract class ExceptionErrorHandler extends \Exception
+abstract class ExceptionErrorHandler extends Exception
 {
 
 	/**
@@ -92,7 +94,7 @@ abstract class ExceptionErrorHandler extends \Exception
 			$sMsg .= '<em>Context</em> :<br><pre>';
 			try {
 				$sMsg .= print_r($this->mixed_vars, true);
-			}catch(\Exception $e){
+			}catch(Exception $e){
 				$sMsg .= 'No Context available';
 			}
 			$sMsg .= '</pre>';
