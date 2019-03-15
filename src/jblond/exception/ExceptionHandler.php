@@ -81,9 +81,15 @@ class ExceptionHandler
                 self::$boolTrace,
                 self::$boolContext
             );
-        } else {
-            throw new self::$aTrans[$eConstantError]($eConstantError, $eStr, $eFile, $eLine, $mixedVars,
-                self::$boolTrace, self::$boolContext);
         }
+        throw new self::$aTrans[$eConstantError](
+            $eConstantError,
+            $eStr,
+            $eFile,
+            $eLine,
+            $mixedVars,
+            self::$boolTrace,
+            self::$boolContext
+        );
     }
 }
