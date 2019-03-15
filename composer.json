@@ -23,5 +23,8 @@
     "psr-4": {
       "jblond\\": "lib/jblond"
     }
+  },
+  "scripts": {
+    "php_cs": "phpcs --standard=phpcs.xml -s -p --colors ./src/"
   }
 }
