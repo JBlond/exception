@@ -37,46 +37,46 @@ class ExceptionHandler
      *
      * @var boolean
      */
-    public static $bool_context = false;
+    public static $boolContext = false;
 
     /**
      * bool trace
      * @var boolean
      */
-    public static $bool_trace = false;
+    public static $boolTrace = false;
 
     /**
      * constructor, optional bool_context boolean can be given if you want context to be displayed or not
-     * @param boolean $bool_trace
-     * @param boolean $bool_context (optional, default = false)
+     * @param boolean $boolTrace
+     * @param boolean $boolContext (optional, default = false)
      * @desc constructor, optional bool_context boolean can be given if you want context to be displayed or not
      */
-    public function __construct($bool_trace = false, $bool_context = false)
+    public function __construct($boolTrace = false, $boolContext = false)
     {
-        self::$bool_trace = $bool_trace;
-        self::$bool_context = $bool_context;
+        self::$boolTrace = $boolTrace;
+        self::$boolContext = $boolContext;
         set_error_handler(array($this, 'errorHandler'));
     }
 
     /**
      * error handler
      *
-     * @param mixed $e_constant_error
-     * @param string $e_str
-     * @param mixed $e_file
-     * @param int $e_line
-     * @param mixed $mixed_vars
+     * @param mixed $eConstantError
+     * @param string $eStr
+     * @param mixed $eFile
+     * @param int $eLine
+     * @param mixed $mixedVars
      * @desc error handler
      * @throws ExceptionUnexpected
      */
-    public static function errorHandler($e_constant_error, $e_str, $e_file, $e_line, $mixed_vars)
+    public static function errorHandler($eConstantError, $eStr, $eFile, $eLine, $mixedVars)
     {
-        if (!isset(self::$aTrans[$e_constant_error])) {
-            throw new ExceptionUnexpected($e_constant_error, $e_str, $e_file, $e_line, $mixed_vars, self::$bool_trace,
-                self::$bool_context);
+        if (!isset(self::$aTrans[$eConstantError])) {
+            throw new ExceptionUnexpected($eConstantError, $eStr, $eFile, $eLine, $mixedVars, self::$boolTrace,
+                self::$boolContext);
         } else {
-            throw new self::$aTrans[$e_constant_error]($e_constant_error, $e_str, $e_file, $e_line, $mixed_vars,
-                self::$bool_trace, self::$bool_context);
+            throw new self::$aTrans[$eConstantError]($eConstantError, $eStr, $eFile, $eLine, $mixedVars,
+                self::$boolTrace, self::$boolContext);
         }
     }
 }
