@@ -1,5 +1,7 @@
 # Exception
 
+[![SymfonyInsight](https://insight.symfony.com/projects/b24b1381-d4b5-4a56-8f1b-4064b3e3de6c/mini.svg)](https://insight.symfony.com/projects/b24b1381-d4b5-4a56-8f1b-4064b3e3de6c)
+
 ## Example
 
 ```PHP
