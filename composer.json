@@ -1,4 +1,3 @@
-
 {
     "name": "jblond/exception",
     "type": "library",
@@ -16,7 +15,7 @@
     ],
     "require": {
         "php" : ">= 7.0"
-    }
+    },
     "autoload": {
         "psr-4": {
            "jblond\\": "lib/jblond"
