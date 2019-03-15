@@ -11,9 +11,9 @@ namespace jblond\exception;
 class ExceptionCompileWarning extends ExceptionErrorHandler
 {
 
-	/**
-	 * error message
-	 * @var string
-	 */
-	protected $eType = 'Compile warning';
+    /**
+     * error message
+     * @var string
+     */
+    protected $eType = 'Compile warning';
 }

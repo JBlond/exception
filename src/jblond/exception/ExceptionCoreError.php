@@ -11,9 +11,9 @@ namespace jblond\exception;
 class ExceptionCoreError extends ExceptionErrorHandler
 {
 
-	/**
-	 * error message
-	 * @var string
-	 */
-	protected $eType = 'Core error';
+    /**
+     * error message
+     * @var string
+     */
+    protected $eType = 'Core error';
 }

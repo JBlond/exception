@@ -11,9 +11,9 @@ namespace jblond\exception;
 class ExceptionParseError extends ExceptionErrorHandler
 {
 
-	/**
-	 * error message
-	 * @var string
-	 */
-	protected $eType = 'Parse error';
+    /**
+     * error message
+     * @var string
+     */
+    protected $eType = 'Parse error';
 }

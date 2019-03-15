@@ -11,9 +11,9 @@ namespace jblond\exception;
 class ExceptionUnexpected extends ExceptionErrorHandler
 {
 
-	/**
-	 * error message
-	 * @var string
-	 */
-	protected $eType = 'Not handled yet';
+    /**
+     * error message
+     * @var string
+     */
+    protected $eType = 'Not handled yet';
 }

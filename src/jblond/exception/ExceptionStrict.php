@@ -11,9 +11,9 @@ namespace jblond\exception;
 class ExceptionStrict extends ExceptionErrorHandler
 {
 
-	/**
-	 * error message
-	 * @var string
-	 */
-	protected $eType = 'Strict error';
+    /**
+     * error message
+     * @var string
+     */
+    protected $eType = 'Strict error';
 }

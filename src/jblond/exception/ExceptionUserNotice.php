@@ -11,9 +11,9 @@ namespace jblond\exception;
 class ExceptionUserNotice extends ExceptionErrorHandler
 {
 
-	/**
-	 * error message
-	 * @var string
-	 */
-	protected $eType = 'User notice';
+    /**
+     * error message
+     * @var string
+     */
+    protected $eType = 'User notice';
 }
