@@ -17,12 +17,11 @@
     "php": ">= 7.1"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "*",
-    "vimeo/psalm": "^4.3"
+    "squizlabs/php_codesniffer": "*"
   },
   "autoload": {
     "psr-4": {
-      "jblond\\": "lib/jblond"
+      "jblond\\": "src/jblond"
     }
   },
   "scripts": {
