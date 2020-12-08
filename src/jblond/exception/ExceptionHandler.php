@@ -66,10 +66,14 @@ class ExceptionHandler
      * @param mixed $eFile
      * @param int $eLine
      * @param mixed $mixedVars
+     *
      * @desc error handler
+     *
      * @throws ExceptionUnexpected
+     *
+     * @return void
      */
-    public static function errorHandler($eConstantError, $eStr, $eFile, $eLine, $mixedVars)
+    public static function errorHandler($eConstantError, $eStr, $eFile, $eLine, $mixedVars): void
     {
         if (!isset(self::$aTrans[$eConstantError])) {
             throw new ExceptionUnexpected(
